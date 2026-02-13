@@ -51,6 +51,47 @@
     cursor: pointer;
 }
 
+/*Hover Effect on Image*/
+
+.premium-hover {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth "pop" effect */
+}
+
+.premium-hover:hover {
+    transform: scale(1.05); /* Slight zoom */
+    filter: brightness(1.1); /* Slight brighten */
+    box-shadow: 0px 8px 25px rgba(255, 0, 220, 0.8) !important; /* Glow intensifies */
+}
+
+.image-container:hover p {
+    color: white !important;
+    text-shadow: 0 0 10px cyan;
+    transition: 0.3s;
+}
+
+/*Hover for Contacts */
+
+
+    .contact-info a {
+        color: cyan;
+        text-decoration: none;
+        transition: all 0.3s ease; /* Smooth transition */
+        display: inline-block;    /* Allows for transform effects */
+    }
+
+    .contact-info a:hover {
+        color: #00ffff;           /* Brighter cyan on hover */
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Soft glow */
+        transform: translateY(-2px); /* Slight lift effect */
+    }
+
+    /* Specifically for the social icons */
+    .contact-info a img:hover {
+        filter: brightness(1.2); /* Makes icons pop */
+        transform: scale(1.1);   /* Slightly enlarges icons */
+    }
+
+
 
 
 
