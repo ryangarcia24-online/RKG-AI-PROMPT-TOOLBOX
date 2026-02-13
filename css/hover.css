@@ -92,6 +92,30 @@
     }
 
 
+    /* Target links within the contact-info container */
+.contact-info a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    display: inline-block;
+}
+
+/* The Hover Glow Effect */
+.contact-info a:hover {
+    color: #0dcaf0; /* Matches your 'text-info' color */
+    text-shadow: 0 0 10px rgba(13, 202, 240, 0.7), 
+                 0 0 20px rgba(13, 202, 240, 0.4);
+    transform: translateY(-2px); /* Slight lift for extra flair */
+}
+
+/* Specific glow for the social icons */
+.contact-info a img {
+    transition: filter 0.3s ease;
+}
+
+.contact-info a:hover img {
+    filter: drop-shadow(0 0 8px rgba(13, 202, 240, 0.8));
+}
+
 
 
 
